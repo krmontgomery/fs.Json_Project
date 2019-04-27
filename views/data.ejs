@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="/public/index.css" />
+    <title>Writing to JSON File</title>
+  </head>
+  <body>
+    <div id="entry-page-banner">
+      <p>Blog Entries</p>
+    </div>
+    <div class="blogpost">
+      <% for(i = 0; i < obj.length; i++) { %>
+      <div class="post">
+        <label>Title</label>
+        <br />
+        <p><%- JSON.stringify(obj[i].blogpost.Title) %></p>
+        <label>Description</label>
+        <br />
+        <p><%- JSON.stringify(obj[i].blogpost.Description) %></p>
+        <label>Author</label>
+        <br />
+        <p><%- JSON.stringify(obj[i].blogpost.Author) %></p>
+        <label>Body</label>
+        <br />
+        <p><%- JSON.stringify(obj[i].blogpost.Body) %></p>
+      </div>
+      <% } %>
+    </div>
+  </body>
+</html>

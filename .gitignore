@@ -1,0 +1,5 @@
+node_modules/*
+.vscode/
+*.json
+# exception for package.json
+!package.json
