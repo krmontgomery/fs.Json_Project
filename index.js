@@ -36,8 +36,8 @@ app.post('/SubmittedData', (req, res) => {
     } else {
       obj = JSON.parse(data); // now its an object
       obj.push({
+        //Array structure
         blogpost: {
-          //Array structure
           Title: req.body.Title,
           Description: req.body.Description,
           Author: req.body.Author,
