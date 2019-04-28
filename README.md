@@ -4,7 +4,9 @@
 
 Allows you to read and write to a JSON file.
 
-Was intended to be a light weight blog entry system.
+Grabs data from input fields and stores/adds them to a JSON file.
+
+This application was intended to be a light weight blog entry system.
 
 ### Utilizes the "EJS" view engine for input and display of the JSON data.
 
